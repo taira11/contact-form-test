@@ -3,7 +3,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/* ヘッダー */
 header {
     background-color: #fff;
     padding: 20px 0;
@@ -43,7 +42,6 @@ header {
     background-color: #f9f9f9;
 }
 
-/* メインコンテンツ */
 main {
     max-width: 1400px;
     margin: 0 auto;
@@ -58,7 +56,6 @@ main {
     text-align: center;
 }
 
-/* 検索フォーム */
 .filter-section {
     display: flex;
     gap: 15px;
@@ -125,7 +122,6 @@ main {
     background-color: #a39680;
 }
 
-/* テーブルコントロール */
 .table-controls {
     display: flex;
     justify-content: space-between;
@@ -149,7 +145,6 @@ main {
     background-color: #a39680;
 }
 
-/* ページネーション */
 .pagination {
     display: flex;
     justify-content: flex-end;
@@ -197,7 +192,6 @@ main {
     background-color: #f5f5f5;
 }
 
-/* テーブル */
 .data-table {
     width: 100%;
     border-collapse: collapse;
@@ -255,7 +249,6 @@ main {
     background-color: #f5f5f5;
 }
 
-/* モーダルウィンドウ */
 .modal {
     display: none;
     position: fixed;
