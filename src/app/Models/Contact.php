@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contact extends Model
 {
+    use HasFactory;
     protected $fillable = ['category_id', 'gender', 'tel', 'last_name', 'first_name', 'email', 'address', 'building', 'detail'];
 
     public function getGenderLabelAttribute()
