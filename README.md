@@ -1,7 +1,7 @@
 環境構築
 
 Dockerビルド
-・git clone
+・git clone git@github.com:taira11/contact-form-test
 ・docker-compose up -d --build
 
 Laravel環境構築
@@ -18,11 +18,10 @@ Laravel環境構築
 ・phpMyAdmin:http://localhost:8080/
 
 使用技術
-・
-・
-・
-・
-・
-・
+・PHP 8.1.33 
+・Laravel 8.83.29
+・MySQL 8.0.26
+・nginx 1.21.1
 
 ER図
+![ER図](./images/er.png)

@@ -20,16 +20,13 @@ class ContactController extends Controller
             'category_id','last_name','first_name','gender','email','tel','address','building','detail'
         ]);
 
-        // 電話番号を文字列化
         if (isset($contact['tel']) && is_array($contact['tel'])) {
             $contact['tel'] = implode('', $contact['tel']);
         }
 
-        // 性別ラベルを追加
         $genderLabels = [1 => '男性', 2 => '女性', 3 => 'その他'];
         $contact['gender_label'] = $genderLabels[$contact['gender']] ?? '-';
 
-        // お問い合わせ種類ラベルを追加
         $categoryLabels = [
             1 => '商品のお届けについて',
             2 => '商品交換について',
@@ -46,17 +43,13 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-        // $contact = $request->only(['category_id','last_name','first_name','gender','email', 'tel','address','building','detail']);
-        // Contact::create($contact);
-    // セッションから値を取得
     $contact = session('contact_input');
 
-    // DBに保存する場合は数字のまま
     Contact::create([
-        'category_id' => $contact['category_id'], // 数字のまま
+        'category_id' => $contact['category_id'],
         'last_name' => $contact['last_name'],
         'first_name' => $contact['first_name'],
-        'gender' => $contact['gender'],           // 数字のまま
+        'gender' => $contact['gender'],
         'email' => $contact['email'],
         'tel' => $contact['tel'],
         'address' => $contact['address'],
@@ -64,12 +57,7 @@ class ContactController extends Controller
         'detail' => $contact['detail'],
     ]);
 
-    // セッションは削除しても良い
     $request->session()->forget('contact_input');
         return view('/contact/thanks');
-
-
-
-
     }
 }
