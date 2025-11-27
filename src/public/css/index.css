@@ -1,0 +1,134 @@
+body {
+    background: #fff;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #8d7a68;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #d6cfc9;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #8d7a68;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300px;
+
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+.form__group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.form__group-content{
+    width: 500px;
+}
+
+.form__group-content--gender{
+    padding-right: 322px;
+}
+
+.form__label--required {
+  margin-left: 5px;
+  padding-left: 0%;
+  border-radius: 3px;
+  background: #fafafa;
+  color: #ff000f;
+}
+
+.form__error{
+    display:flex;
+    justify-content: space-between;
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+    padding-right: 145px;
+}
+
+.form__error--gender{
+    display:flex;
+    justify-content: space-between;
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.form__input--text{
+    display: flex;
+    gap: 20px;
+}
+
+.form__input--text input {
+    height: 20px;
+    width: 500%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #faf7f5;
+}
+
+.form__input--text select {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #faf7f5;
+}
+
+.form__input--textarea textarea {
+  padding: 10px;
+  width: 500px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background-color: #faf7f5;;
+  appearance: none;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 5px;
+    width: 15%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    background: #8d7a68;
+    color: #fff;
+    cursor: pointer;
+}
+
+input::placeholder,
+option::placeholder,
+textarea::placeholder {
+  color: #999;
+}
