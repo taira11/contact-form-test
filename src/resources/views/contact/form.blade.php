@@ -50,9 +50,6 @@
                     </div>
                     <div class="form__group-content--gender">
                         <div class="form__input--title">
-                            <!-- <input type="radio" name="gender" value="1" {{ old('gender', session('contact_input.gender', '')) == 1 ? 'selected' : '' }}><label>男性</label>
-                            <input type="radio" name="gender" value="2" {{ old('gender', session('contact_input.gender', '')) == 2 ? 'selected' : '' }}><label>女性</label>
-                            <input type="radio" name="gender" value="3" {{ old('gender', session('contact_input.gender', '')) == 3 ? 'selected' : '' }}> <label>その他</label> -->
                             @php
                             $genderValue = request('gender', old('gender', session('contact_input.gender')));
                             @endphp
